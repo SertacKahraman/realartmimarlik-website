@@ -101,7 +101,7 @@ export default function AboutContent() {
               </h2>
               <div className="space-y-6 text-lg leading-relaxed text-white/75">
                 <p>
-                  <strong>Real Art Mimarlık</strong>, 2025 yılında Ordu&apos;nun
+                  <strong>Real Art Mimarlık</strong>, 2022 yılında Ordu&apos;nun
                   Altınordu ilçesinde kurulmuş, mimarlık ve tasarım alanında hizmet
                   veren yenilikçi bir mimarlık ofisidir. Kurulduğu günden bu yana
                   konut, villa, ofis ve ticari mekan projeleri başta olmak üzere birçok
@@ -124,7 +124,7 @@ export default function AboutContent() {
 
               <div className="mt-8 grid grid-cols-2 gap-6">
                 <div className="rounded-xl border border-white/5 bg-white/5 p-4">
-                  <div className="mb-1 text-3xl font-bold text-white">2025</div>
+                  <div className="mb-1 text-3xl font-bold text-white">2022</div>
                   <div className="text-sm uppercase tracking-wider text-white/60">
                     Kuruluş Yılı
                   </div>
