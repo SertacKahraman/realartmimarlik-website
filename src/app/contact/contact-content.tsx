@@ -345,15 +345,6 @@ export default function ContactContent() {
                         : "Form Yakinda Aktif"}
                   </button>
 
-                  {!isContactFormConfigured && (
-                    <div className="rounded-xl border border-amber-400/20 bg-amber-400/10 p-4 text-amber-300">
-                      <p>
-                        Ä°letiÅŸim formu yayÄ±n iÃ§in henÃ¼z yapÄ±landÄ±rÄ±lmadÄ±. Vercel
-                        ortamÄ±na EmailJS deÄŸerleri eklendiÄŸinde gÃ¶nderim aktif
-                        olacaktÄ±r.
-                      </p>
-                    </div>
-                  )}
 
                   {status === "success" && (
                     <div className="animate-fade-up flex items-center gap-2 rounded-xl border border-green-400/20 bg-green-400/10 p-4 text-green-400">
