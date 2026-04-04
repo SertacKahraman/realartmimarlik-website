@@ -15,7 +15,7 @@ export const siteConfig = {
     "Real Art Mimarlık | Ordu'da Mimari Tasarım ve İnşaat Çözümleri",
   description:
     "Real Art Mimarlık, Ordu merkezli mimari tasarım, iç mimari, inşaat uygulama, proje geliştirme ve danışmanlık çözümleri sunar.",
-  phone: "+90-532-987-65-43",
+  phone: "+90-530-770-07-95",
   email: "info@realartmimarlik.com",
   address: {
     streetAddress: "Akyazı, Atatürk Blv. 357/A",

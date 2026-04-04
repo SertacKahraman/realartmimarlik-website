@@ -33,8 +33,8 @@ const contactInfo = [
   {
     icon: <Phone className="h-6 w-6" />,
     title: "Telefon",
-    lines: ["+90 (532) 987 65 43"],
-    href: "tel:+905329876543",
+    lines: ["+90 (530) 770 07 95"],
+    href: "tel:+905307700795",
   },
   {
     icon: <Mail className="h-6 w-6" />,

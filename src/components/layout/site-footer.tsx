@@ -30,7 +30,7 @@ const footerColumns = [
         label: "info@realartmimarlik.com",
         href: "mailto:info@realartmimarlik.com",
       },
-      { label: "+90 (532) 987 65 43", href: "tel:+905329876543" },
+      { label: "+90 (530) 770 07 95", href: "tel:+905307700795" },
       {
         label: "Akyazı, Atatürk Blv. 357/A\nAltınordu, Ordu",
         href: "https://maps.google.com/?q=Akyaz%C4%B1,+Atat%C3%BCrk+Blv.+357/A,+Alt%C4%B1nordu,+Ordu",
