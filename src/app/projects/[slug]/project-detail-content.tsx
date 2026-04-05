@@ -205,19 +205,24 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
               <Reveal className="mb-10">
                 <h2 className="text-2xl font-bold md:text-3xl">İlgili Hizmetler</h2>
               </Reveal>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-3">
                 {relatedServices.map((service, index) => (
-                  <Reveal key={service.slug} delay={index * 80}>
+                  <Reveal key={service.slug} delay={index * 80} className="h-full">
                     <Link
                       href={`/services/${service.slug}`}
-                      className="group rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-white/20 hover:bg-white/[0.04]"
+                      className="group flex h-full w-full flex-col rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-white/20 hover:bg-white/[0.04]"
                     >
-                      <h3 className="mb-3 text-lg font-semibold text-white/90">
-                        {service.title}
-                      </h3>
-                      <p className="text-sm leading-relaxed text-white/55">
-                        {service.description}
-                      </p>
+                      <div className="flex-1">
+                        <h3 className="mb-3 text-lg font-semibold text-white/90">
+                          {service.title}
+                        </h3>
+                        <p className="line-clamp-4 text-sm leading-relaxed text-white/55">
+                          {service.description}
+                        </p>
+                      </div>
+                      <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/70 transition-all group-hover:gap-3 group-hover:text-white">
+                        Hizmeti İncele <ArrowRight size={14} />
+                      </span>
                     </Link>
                   </Reveal>
                 ))}

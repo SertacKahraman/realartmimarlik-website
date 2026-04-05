@@ -10,7 +10,12 @@ const serviceRelations: Record<
   }
 > = {
   "mimari-tasarim": {
-    projects: ["akyazi-villa", "gokdelen-tasarim", "sinanoglu-projesi"],
+    projects: [
+      "akyazi-villa",
+      "gokdelen-tasarim",
+      "bucak-bitisik-nizam",
+      "sinanoglu-projesi",
+    ],
     posts: [
       "2026-modern-mimari-trendleri-ordu",
       "insaat-ruhsati-nasil-alinir-adim-adim",
@@ -34,14 +39,19 @@ const serviceRelations: Record<
     ],
   },
   "kentsel-donusum": {
-    projects: ["sinanoglu-projesi"],
+    projects: ["sinanoglu-projesi", "bucak-bitisik-nizam"],
     posts: [
       "kentsel-donusum-yasasi-2026-degisiklikleri",
       "kat-irtifaki-kat-mulkiyeti-farki-nedir",
     ],
   },
   danismanlik: {
-    projects: ["akyazi-villa", "sinanoglu-projesi", "gokdelen-tasarim"],
+    projects: [
+      "akyazi-villa",
+      "sinanoglu-projesi",
+      "gokdelen-tasarim",
+      "bucak-bitisik-nizam",
+    ],
     posts: [
       "mimar-tutmak-gerekli-mi-ne-zaman-basvurmali",
       "insaat-ruhsati-nasil-alinir-adim-adim",
@@ -79,11 +89,28 @@ const projectRelations: Record<
       "mimar-tutmak-gerekli-mi-ne-zaman-basvurmali",
     ],
   },
+  "bucak-bitisik-nizam": {
+    services: ["mimari-tasarim", "kentsel-donusum", "danismanlik"],
+    posts: [
+      "kentsel-donusum-yasasi-2026-degisiklikleri",
+      "2026-modern-mimari-trendleri-ordu",
+      "mimar-tutmak-gerekli-mi-ne-zaman-basvurmali",
+      "insaat-ruhsati-nasil-alinir-adim-adim",
+    ],
+  },
   "ozyil-hirdavat": {
     services: ["ic-mimari", "mimari-tasarim", "insaat-uygulama"],
     posts: [
       "2026-insaat-ve-tadilat-maliyetleri",
       "komple-ev-tadilati-is-siralamasi-rehberi",
+    ],
+  },
+  "cambasi-kafe": {
+    services: ["ic-mimari", "mimari-tasarim", "insaat-uygulama"],
+    posts: [
+      "2026-modern-mimari-trendleri-ordu",
+      "komple-ev-tadilati-is-siralamasi-rehberi",
+      "2026-insaat-ve-tadilat-maliyetleri",
     ],
   },
   "sinanoglu-projesi": {
@@ -104,11 +131,11 @@ const blogRelations: Record<
 > = {
   "2026-modern-mimari-trendleri-ordu": {
     services: ["mimari-tasarim", "ic-mimari", "peyzaj-tasarimi"],
-    projects: ["akyazi-villa", "gokdelen-tasarim"],
+    projects: ["akyazi-villa", "gokdelen-tasarim", "bucak-bitisik-nizam"],
   },
   "kentsel-donusum-yasasi-2026-degisiklikleri": {
     services: ["kentsel-donusum", "danismanlik"],
-    projects: ["sinanoglu-projesi"],
+    projects: ["sinanoglu-projesi", "bucak-bitisik-nizam"],
   },
   "2026-insaat-ve-tadilat-maliyetleri": {
     services: ["insaat-uygulama", "danismanlik", "ic-mimari"],
@@ -120,7 +147,7 @@ const blogRelations: Record<
   },
   "insaat-ruhsati-nasil-alinir-adim-adim": {
     services: ["mimari-tasarim", "danismanlik", "insaat-uygulama"],
-    projects: ["sinanoglu-projesi", "akyazi-villa"],
+    projects: ["sinanoglu-projesi", "akyazi-villa", "bucak-bitisik-nizam"],
   },
   "komple-ev-tadilati-is-siralamasi-rehberi": {
     services: ["ic-mimari", "insaat-uygulama", "danismanlik"],
@@ -128,11 +155,11 @@ const blogRelations: Record<
   },
   "mimar-tutmak-gerekli-mi-ne-zaman-basvurmali": {
     services: ["mimari-tasarim", "ic-mimari", "danismanlik"],
-    projects: ["akyazi-villa", "gokdelen-tasarim"],
+    projects: ["akyazi-villa", "gokdelen-tasarim", "bucak-bitisik-nizam"],
   },
   "kat-irtifaki-kat-mulkiyeti-farki-nedir": {
     services: ["kentsel-donusum", "danismanlik"],
-    projects: ["sinanoglu-projesi"],
+    projects: ["sinanoglu-projesi", "bucak-bitisik-nizam"],
   },
 };
 

@@ -102,10 +102,11 @@ export default function AboutContent() {
               <div className="space-y-6 text-lg leading-relaxed text-white/75">
                 <p>
                   <strong>Real Art Mimarlık</strong>, 2022 yılında Ordu&apos;nun
-                  Altınordu ilçesinde kurulmuş, mimarlık ve tasarım alanında hizmet
-                  veren yenilikçi bir mimarlık ofisidir. Kurulduğu günden bu yana
-                  konut, villa, ofis ve ticari mekan projeleri başta olmak üzere birçok
-                  alanda modern, estetik ve işlevsel çözümler üretmektedir.
+                  Altınordu ilçesinde Yiğithan Kuntay Yılmaz tarafından kurulmuş,
+                  mimarlık ve tasarım alanında hizmet veren yenilikçi bir mimarlık
+                  ofisidir. Kurulduğu günden bu yana konut, villa, ofis ve ticari
+                  mekan projeleri başta olmak üzere birçok alanda modern, estetik ve
+                  işlevsel çözümler üretmektedir.
                 </p>
                 <p>
                   <strong>Misyonumuz;</strong> Ordu ve çevresinde mimari projeler, iç

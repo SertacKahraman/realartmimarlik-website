@@ -20,8 +20,10 @@ export const projects: Record<string, Project> = {
       "/images/projects/akyazi-villa-2.jpeg",
       "/images/projects/akyazi-villa-3.jpeg",
       "/images/projects/akyazi-villa-4.jpeg",
+      "/images/projects/akyazi-villa-5.jpeg",
       "/images/projects/akyazi-insaat-1.jpeg",
       "/images/projects/akyazi-insaat-2.jpeg",
+      "/images/projects/akyazi-insaat-3.jpeg",
     ],
     services: ["Mimari Tasarım", "Projelendirme", "Uygulama Takibi"],
     materials: [
@@ -66,6 +68,40 @@ export const projects: Record<string, Project> = {
       "Konsept odaklı tasarım dili",
     ],
   },
+  "bucak-bitisik-nizam": {
+    id: 6,
+    slug: "bucak-bitisik-nizam",
+    title: "Bucak Dış Cephe Tasarımı",
+    description:
+      "Ordu Bucak Mahallesi'nde bitişik nizam yapı için geliştirilen dış cephe tasarım çalışması.",
+    longDescription:
+      "Bucak Dış Cephe Tasarımı projesi, dar parsel ve komşu yapı ilişkilerini dikkate alarak geliştirilen çağdaş bir dış cephe tasarım önerisidir. Kütle oranları, pencere ritmi ve malzeme dengesi birlikte ele alınmış; sokak dokusuyla uyumlu, güçlü ve karakter sahibi bir cephe dili oluşturulmuştur.",
+    category: "Tasarım",
+    location: "Ordu, Bucak Mahallesi",
+    year: 2025,
+    area: "Dış Cephe Tasarımı",
+    status: "Konsept Çalışma",
+    image: "/images/projects/bucak-discephe.jpeg",
+    gallery: ["/images/projects/bucak-discephe.jpeg"],
+    services: [
+      "Mimari Tasarım",
+      "Cephe Tasarımı",
+      "Projelendirme",
+      "Kentsel Dönüşüm",
+    ],
+    materials: [
+      "Modern cephe kaplamaları",
+      "Düşey-düşey ritim dengesi",
+      "Doğrama ve açıklık kurgusu",
+      "Sokak siluetine uyumlu yüzey kararları",
+    ],
+    features: [
+      "Bitişik nizam yapıya uygun cephe dili",
+      "Dar parsel koşullarına uyum",
+      "Güçlü giriş ve pencere kompozisyonu",
+      "Çağdaş ve dengeli dış görünüş",
+    ],
+  },
   "ozyil-hirdavat": {
     id: 3,
     slug: "ozyil-hirdavat",
@@ -80,7 +116,10 @@ export const projects: Record<string, Project> = {
     area: "Ticari Mekan",
     status: "Tamamlandı",
     image: "/images/projects/ozyil-hirdavat-1.jpeg",
-    gallery: ["/images/projects/ozyil-hirdavat-1.jpeg"],
+    gallery: [
+      "/images/projects/ozyil-hirdavat-1.jpeg",
+      "/images/projects/ozyil-hirdavat-2.jpeg",
+    ],
     services: ["Ticari Mekan Tasarımı", "Cephe Düzenleme", "Uygulama"],
     materials: [
       "Dış cephe kaplama",
@@ -125,6 +164,39 @@ export const projects: Record<string, Project> = {
       "Dengeli cephe kurgusu",
       "Fonksiyonel proje yaklaşımı",
       "Uygulama ve tasarım bütünlüğü",
+    ],
+  },
+  "cambasi-kafe": {
+    id: 5,
+    slug: "cambasi-kafe",
+    title: "Çambaşı Kafe",
+    description:
+      "Ordu Çambaşı bölgesinde konumlanan, sıcak atmosferi ve marka kimliğiyle öne çıkan kafe projesi.",
+    longDescription:
+      "Çambaşı Kafe projesi, doğal çevre ile uyumlu bir ticari mekan dili oluşturmak amacıyla tasarım ve uygulama kararlarını bir araya getiren özel bir çalışmadır. Cephe kurgusu, iç mekan atmosferi ve oturma düzeni birlikte ele alınmış; misafir deneyimini güçlendiren, davetkar ve işlevsel bir kullanım senaryosu oluşturulmuştur.",
+    category: "Ticari",
+    location: "Ordu, Çambaşı",
+    year: 2024,
+    area: "Kafe ve Sosyal Alan",
+    status: "Tamamlandı",
+    image: "/images/projects/cambasi-kafe-1.jpeg",
+    gallery: [
+      "/images/projects/cambasi-kafe-1.jpeg",
+      "/images/projects/cambasi-kafe-2.jpeg",
+      "/images/projects/cambasi-kafe-3.jpeg",
+    ],
+    services: ["Ticari Mekan Tasarımı", "İç Mimari", "Uygulama"],
+    materials: [
+      "Doğal doku vurgulu yüzeyler",
+      "Ahşap ve metal detaylar",
+      "Cephe aydınlatma çözümleri",
+      "Mekan kimliğini destekleyen dekoratif uygulamalar",
+    ],
+    features: [
+      "Davetkar kafe atmosferi",
+      "Marka kimliğini güçlendiren cephe",
+      "Kullanıcı odaklı oturma planı",
+      "Doğayla uyumlu ticari mekan dili",
     ],
   },
 };

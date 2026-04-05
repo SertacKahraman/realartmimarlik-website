@@ -53,9 +53,10 @@ export function AboutSection() {
 
             <Reveal delay={160}>
               <p className="mb-6 text-base leading-relaxed text-white/60 md:text-lg">
-                Real Art Mimarlık, Ordu&apos;da ofisi bulunan; mimari tasarım,
-                proje geliştirme, inşaat uygulama, iç mimari ve danışmanlık
-                alanlarında hizmet veren bir mimarlık şirketidir.
+                Real Art Mimarlık, Yiğithan Kuntay Yılmaz tarafından kurulmuş;
+                Ordu&apos;da mimari tasarım, proje geliştirme, inşaat uygulama, iç
+                mimari ve danışmanlık alanlarında hizmet veren bir mimarlık
+                şirketidir.
               </p>
             </Reveal>
             <Reveal delay={240}>
