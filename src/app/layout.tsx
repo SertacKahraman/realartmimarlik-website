@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 import { SiteSchema } from "@/components/seo/site-schema";
 import { absoluteUrl } from "@/lib/seo";
@@ -90,6 +91,7 @@ export default function RootLayout({
       >
         <SiteSchema />
         {children}
+        <Analytics />
       </body>
     </html>
   );
