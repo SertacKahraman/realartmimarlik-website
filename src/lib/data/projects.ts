@@ -91,7 +91,7 @@ export const projects: Record<string, Project> = {
     ],
     materials: [
       "Modern cephe kaplamaları",
-      "Düşey-düşey ritim dengesi",
+      "Düşey-yatay ritim dengesi",
       "Doğrama ve açıklık kurgusu",
       "Sokak siluetine uyumlu yüzey kararları",
     ],
@@ -199,6 +199,147 @@ export const projects: Record<string, Project> = {
       "Doğayla uyumlu ticari mekan dili",
     ],
   },
+  "efirli-projesi": {
+    id: 7,
+    slug: "efirli-projesi",
+    title: "Efirli Projesi",
+    description:
+      "Efirli bölgesi için geliştirilen, cephe dengesi ve ferah yaşam alanlarıyla öne çıkan konut projesi.",
+    longDescription:
+      "Efirli Projesi, kıyı yerleşiminin sakin dokusuna uyum sağlayan yalın bir mimari dil üzerine kurgulanmıştır. Kütle oranları, balkon kullanımı ve gün ışığını içeri alan açıklıklar birlikte değerlendirilerek hem yaşama konforu hem de dış cephe etkisi güçlü bir konut tasarımı oluşturulmuştur.",
+    category: "Konut",
+    location: "Ordu, Efirli",
+    year: 2026,
+    area: "Konut Projesi",
+    status: "Projelendirme Aşamasında",
+    image: "/images/projects/efirli-proje-1.jpeg",
+    gallery: [
+      "/images/projects/efirli-proje-1.jpeg",
+      "/images/projects/efirli-proje-2.jpeg",
+      "/images/projects/efirli-proje-3.jpeg",
+      "/images/projects/efirli-proje-4.jpeg",
+    ],
+    services: ["Mimari Tasarım", "Projelendirme", "Cephe Tasarımı"],
+    materials: [
+      "Açık tonlu cephe kaplamaları",
+      "Cam korkuluk detayları",
+      "Balkon ve teras yüzey çözümleri",
+      "Gün ışığını artıran doğrama kurgusu",
+    ],
+    features: [
+      "Ferah cephe kompozisyonu",
+      "Doğal ışık odaklı plan yaklaşımı",
+      "Kıyı dokusuna uyumlu sade mimari",
+      "Geniş balkon ve dış mekan kullanımı",
+    ],
+  },
+  "defne-evleri": {
+    id: 8,
+    slug: "defne-evleri",
+    title: "Defne Evleri",
+    description:
+      "Çoklu konut yerleşimi için geliştirilen, bütüncül cephe dili ve düzenli yaşam kurgusuyla öne çıkan proje.",
+    longDescription:
+      "Defne Evleri, birden fazla bağımsız yaşam birimini tek bir mimari dil altında buluşturan konut yaklaşımını temsil eder. Ortak cephe ritmi, dolaşım sürekliliği ve kullanıcı konforu birlikte ele alınarak hem yatırım değeri yüksek hem de günlük yaşama uyumlu bir yerleşim senaryosu hedeflenmiştir.",
+    category: "Konut",
+    location: "Ordu",
+    year: 2026,
+    area: "Toplu Konut",
+    status: "Projelendirme Aşamasında",
+    image: "/images/projects/defne-evleri-1.jpeg",
+    gallery: [
+      "/images/projects/defne-evleri-1.jpeg",
+      "/images/projects/defne-evleri-2.jpeg",
+      "/images/projects/defne-evleri-3.jpeg",
+      "/images/projects/defne-evleri-4.jpeg",
+      "/images/projects/defne-evleri-5.jpeg",
+      "/images/projects/defne-evleri-6.jpeg",
+      "/images/projects/defne-evleri-7.jpeg",
+      "/images/projects/defne-evleri-8.jpeg",
+      "/images/projects/defne-evleri-9.jpeg",
+      "/images/projects/defne-evleri-10.jpeg",
+      "/images/projects/defne-evleri-11.jpeg",
+      "/images/projects/defne-evleri-12.jpeg",
+    ],
+    services: ["Mimari Tasarım", "Konut Projelendirme", "Uygulama Takibi"],
+    materials: [
+      "Tekrarlı cephe modülleri",
+      "Dayanıklı dış yüzey kaplamaları",
+      "Ortak alanlara uyumlu doğrama detayları",
+      "Yerleşim bütünlüğünü destekleyen peyzaj sınırları",
+    ],
+    features: [
+      "Bütüncül site cephe kimliği",
+      "Birden fazla bağımsız birim kurgusu",
+      "Düzenli giriş ve dolaşım organizasyonu",
+      "Yatırım ve yaşam dengesini gözeten planlama",
+    ],
+  },
+  "boztepe-gursoy-koy-evi": {
+    id: 9,
+    slug: "boztepe-gursoy-koy-evi",
+    title: "Boztepe Gürsoy Köy Evi",
+    description:
+      "Boztepe'de doğal çevreyle uyumlu biçimde ele alınan, sıcak malzeme diliyle öne çıkan köy evi projesi.",
+    longDescription:
+      "Boztepe Gürsoy Köy Evi, kırsal yaşamın dingin karakterini çağdaş konfor beklentileriyle bir araya getiren bir konut çalışmasıdır. Yapının kütlesi, çatı formu ve cephe açıklıkları çevreyle uyum kuracak şekilde düşünülmüş; sade ama karakterli bir kırsal ev dili hedeflenmiştir.",
+    category: "Konut",
+    location: "Ordu, Boztepe",
+    year: 2026,
+    area: "Köy Evi",
+    status: "Projelendirme Aşamasında",
+    image: "/images/projects/boztepe-gursoy-koy-evi-1.jpeg",
+    gallery: [
+      "/images/projects/boztepe-gursoy-koy-evi-1.jpeg",
+      "/images/projects/boztepe-gursoy-koy-evi-2.jpeg",
+    ],
+    services: ["Mimari Tasarım", "İç Mimari", "Uygulama Takibi"],
+    materials: [
+      "Doğal dokuya uyumlu dış cephe yüzeyleri",
+      "Eğimli çatı detayları",
+      "Ahşap dokulu tamamlayıcı elemanlar",
+      "Manzaraya açılan geniş açıklıklar",
+    ],
+    features: [
+      "Kırsal dokuya uyumlu mimari yaklaşım",
+      "Sıcak ve davetkar cephe dili",
+      "Manzara odaklı yaşam alanları",
+      "Doğayla ilişki kuran sade kütle yapısı",
+    ],
+  },
+  "beacons-kafe": {
+    id: 10,
+    slug: "beacons-kafe",
+    title: "Beacons Kafe",
+    description:
+      "Çağdaş ticari mekan diliyle geliştirilen, güçlü cephe etkisi ve davetkar atmosferiyle öne çıkan kafe projesi.",
+    longDescription:
+      "Beacons Kafe projesi, güncel yeme-içme mekan beklentilerine yanıt veren güçlü bir ticari mekan tasarımı olarak ele alınmıştır. Cephe görünürlüğü, kullanıcı sirkülasyonu ve iç mekan atmosferi birlikte düşünülerek hem marka algısını yükselten hem de konforlu kullanım sunan bir mekan kurgusu hedeflenmiştir.",
+    category: "Ticari",
+    location: "Ordu, Cumhuriyet",
+    year: 2026,
+    area: "Kafe ve Sosyal Alan",
+    status: "Projelendirme Aşamasında",
+    image: "/images/projects/beacons-kafe-1.jpeg",
+    gallery: [
+      "/images/projects/beacons-kafe-1.jpeg",
+      "/images/projects/beacons-kafe-2.jpeg",
+      "/images/projects/beacons-kafe-3.jpeg",
+    ],
+    services: ["Ticari Mekan Tasarımı", "İç Mimari", "Cephe Tasarımı"],
+    materials: [
+      "Vitrin ve giriş yüzeyi çözümleri",
+      "Sıcak atmosfer oluşturan iç mekan kaplamaları",
+      "Marka kimliğini destekleyen aydınlatma detayları",
+      "Yoğun kullanıma uygun ticari mekan malzemeleri",
+    ],
+    features: [
+      "Davetkar kafe cephesi",
+      "Marka görünürlüğünü öne çıkaran mekan dili",
+      "Kullanıcı akışını destekleyen plan kurgusu",
+      "Sosyal deneyimi güçlendiren iç mekan atmosferi",
+    ],
+  },
 };
 
-export const projectsList = Object.values(projects);
+export const projectsList = Object.values(projects).sort((a, b) => b.id - a.id);

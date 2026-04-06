@@ -80,7 +80,10 @@ export default function ProjectsContent() {
                   { "--enter-delay": `${Math.min(index, 8) * 70}ms` } as CSSProperties
                 }
               >
-                <Link href={`/projects/${project.slug}`} className="block h-full w-full">
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="relative block h-full w-full"
+                >
                   <Image
                     src={project.image}
                     alt={`${project.title} - ${project.category} projesi, ${project.location}`}

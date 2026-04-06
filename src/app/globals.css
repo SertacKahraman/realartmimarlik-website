@@ -9,6 +9,11 @@
   --foreground: #ededed;
 }
 
+html,
+body {
+  position: relative;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

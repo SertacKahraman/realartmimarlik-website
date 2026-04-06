@@ -10,6 +10,8 @@ import {
 } from "@/lib/content-links";
 import type { Project } from "@/lib/types";
 
+import ProjectGalleryLightbox from "./project-gallery-lightbox";
+
 export default function ProjectDetailContent({ project }: { project: Project }) {
   const relatedServices = getRelatedServicesForProject(project.slug, 3);
   const relatedPosts = getRelatedPostsForProject(project.slug, 2);
@@ -173,30 +175,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
         </div>
       </section>
 
-      <section className="px-6 pb-20 md:pb-32">
-        <div className="mx-auto max-w-7xl">
-          <Reveal>
-            <h2 className="mb-8 text-2xl font-bold md:mb-12 md:text-3xl">
-              Proje Galerisi
-            </h2>
-          </Reveal>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {project.gallery.map((img, index) => (
-              <Reveal key={img} delay={index * 80}>
-                <div className="relative aspect-square overflow-hidden rounded-xl border border-white/5 bg-zinc-900">
-                  <Image
-                    src={img}
-                    alt={`${project.title} galeri görseli ${index + 1}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProjectGalleryLightbox images={project.gallery} title={project.title} />
 
       <section className="px-6 pb-20 md:pb-32">
         <div className="mx-auto max-w-7xl space-y-20">

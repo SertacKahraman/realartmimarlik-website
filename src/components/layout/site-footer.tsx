@@ -52,6 +52,7 @@ export function SiteFooter() {
                 width={140}
                 height={48}
                 className="mb-4 h-10 w-auto md:mb-6 md:h-12"
+                style={{ width: "auto" }}
               />
               <p className="text-xs leading-relaxed text-white/60 md:text-sm">
                 Ordu merkezli Real Art Mimarlık; mimari tasarım, iç mimari,

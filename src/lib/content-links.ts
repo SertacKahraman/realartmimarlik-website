@@ -11,6 +11,9 @@ const serviceRelations: Record<
 > = {
   "mimari-tasarim": {
     projects: [
+      "boztepe-gursoy-koy-evi",
+      "defne-evleri",
+      "efirli-projesi",
       "akyazi-villa",
       "gokdelen-tasarim",
       "bucak-bitisik-nizam",
@@ -23,7 +26,13 @@ const serviceRelations: Record<
     ],
   },
   "ic-mimari": {
-    projects: ["akyazi-villa", "ozyil-hirdavat"],
+    projects: [
+      "beacons-kafe",
+      "boztepe-gursoy-koy-evi",
+      "defne-evleri",
+      "akyazi-villa",
+      "ozyil-hirdavat",
+    ],
     posts: [
       "2026-modern-mimari-trendleri-ordu",
       "komple-ev-tadilati-is-siralamasi-rehberi",
@@ -31,7 +40,14 @@ const serviceRelations: Record<
     ],
   },
   "insaat-uygulama": {
-    projects: ["akyazi-villa", "sinanoglu-projesi", "ozyil-hirdavat"],
+    projects: [
+      "beacons-kafe",
+      "defne-evleri",
+      "efirli-projesi",
+      "akyazi-villa",
+      "sinanoglu-projesi",
+      "ozyil-hirdavat",
+    ],
     posts: [
       "villa-yapim-maliyeti-2026-rehberi",
       "2026-insaat-ve-tadilat-maliyetleri",
@@ -47,6 +63,9 @@ const serviceRelations: Record<
   },
   danismanlik: {
     projects: [
+      "defne-evleri",
+      "efirli-projesi",
+      "boztepe-gursoy-koy-evi",
       "akyazi-villa",
       "sinanoglu-projesi",
       "gokdelen-tasarim",
@@ -59,7 +78,7 @@ const serviceRelations: Record<
     ],
   },
   "peyzaj-tasarimi": {
-    projects: ["akyazi-villa"],
+    projects: ["efirli-projesi", "boztepe-gursoy-koy-evi", "akyazi-villa"],
     posts: [
       "2026-modern-mimari-trendleri-ordu",
       "villa-yapim-maliyeti-2026-rehberi",
@@ -113,6 +132,38 @@ const projectRelations: Record<
       "2026-insaat-ve-tadilat-maliyetleri",
     ],
   },
+  "beacons-kafe": {
+    services: ["ic-mimari", "mimari-tasarim", "insaat-uygulama"],
+    posts: [
+      "2026-modern-mimari-trendleri-ordu",
+      "komple-ev-tadilati-is-siralamasi-rehberi",
+      "2026-insaat-ve-tadilat-maliyetleri",
+    ],
+  },
+  "efirli-projesi": {
+    services: ["mimari-tasarim", "insaat-uygulama", "peyzaj-tasarimi"],
+    posts: [
+      "2026-modern-mimari-trendleri-ordu",
+      "villa-yapim-maliyeti-2026-rehberi",
+      "insaat-ruhsati-nasil-alinir-adim-adim",
+    ],
+  },
+  "defne-evleri": {
+    services: ["mimari-tasarim", "insaat-uygulama", "danismanlik"],
+    posts: [
+      "2026-insaat-ve-tadilat-maliyetleri",
+      "mimar-tutmak-gerekli-mi-ne-zaman-basvurmali",
+      "insaat-ruhsati-nasil-alinir-adim-adim",
+    ],
+  },
+  "boztepe-gursoy-koy-evi": {
+    services: ["mimari-tasarim", "ic-mimari", "peyzaj-tasarimi"],
+    posts: [
+      "villa-yapim-maliyeti-2026-rehberi",
+      "2026-modern-mimari-trendleri-ordu",
+      "2026-insaat-ve-tadilat-maliyetleri",
+    ],
+  },
   "sinanoglu-projesi": {
     services: ["mimari-tasarim", "insaat-uygulama", "kentsel-donusum"],
     posts: [
@@ -131,7 +182,13 @@ const blogRelations: Record<
 > = {
   "2026-modern-mimari-trendleri-ordu": {
     services: ["mimari-tasarim", "ic-mimari", "peyzaj-tasarimi"],
-    projects: ["akyazi-villa", "gokdelen-tasarim", "bucak-bitisik-nizam"],
+    projects: [
+      "boztepe-gursoy-koy-evi",
+      "efirli-projesi",
+      "akyazi-villa",
+      "gokdelen-tasarim",
+      "bucak-bitisik-nizam",
+    ],
   },
   "kentsel-donusum-yasasi-2026-degisiklikleri": {
     services: ["kentsel-donusum", "danismanlik"],
@@ -139,23 +196,40 @@ const blogRelations: Record<
   },
   "2026-insaat-ve-tadilat-maliyetleri": {
     services: ["insaat-uygulama", "danismanlik", "ic-mimari"],
-    projects: ["akyazi-villa", "ozyil-hirdavat"],
+    projects: [
+      "beacons-kafe",
+      "defne-evleri",
+      "boztepe-gursoy-koy-evi",
+      "akyazi-villa",
+      "ozyil-hirdavat",
+    ],
   },
   "villa-yapim-maliyeti-2026-rehberi": {
     services: ["mimari-tasarim", "insaat-uygulama", "peyzaj-tasarimi"],
-    projects: ["akyazi-villa"],
+    projects: ["boztepe-gursoy-koy-evi", "efirli-projesi", "akyazi-villa"],
   },
   "insaat-ruhsati-nasil-alinir-adim-adim": {
     services: ["mimari-tasarim", "danismanlik", "insaat-uygulama"],
-    projects: ["sinanoglu-projesi", "akyazi-villa", "bucak-bitisik-nizam"],
+    projects: [
+      "defne-evleri",
+      "efirli-projesi",
+      "sinanoglu-projesi",
+      "akyazi-villa",
+      "bucak-bitisik-nizam",
+    ],
   },
   "komple-ev-tadilati-is-siralamasi-rehberi": {
     services: ["ic-mimari", "insaat-uygulama", "danismanlik"],
-    projects: ["ozyil-hirdavat", "akyazi-villa"],
+    projects: ["beacons-kafe", "ozyil-hirdavat", "akyazi-villa"],
   },
   "mimar-tutmak-gerekli-mi-ne-zaman-basvurmali": {
     services: ["mimari-tasarim", "ic-mimari", "danismanlik"],
-    projects: ["akyazi-villa", "gokdelen-tasarim", "bucak-bitisik-nizam"],
+    projects: [
+      "defne-evleri",
+      "akyazi-villa",
+      "gokdelen-tasarim",
+      "bucak-bitisik-nizam",
+    ],
   },
   "kat-irtifaki-kat-mulkiyeti-farki-nedir": {
     services: ["kentsel-donusum", "danismanlik"],

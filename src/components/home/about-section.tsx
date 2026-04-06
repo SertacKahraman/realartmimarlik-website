@@ -11,7 +11,7 @@ export function AboutSection() {
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal className="group relative order-2 lg:order-1" direction="left">
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-white/5 bg-neutral-900">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/5 bg-neutral-900">
               <Image
                 src="/images/home/hakkimizda.webp"
                 alt="Real Art Mimarlık Ordu ofisi"

@@ -39,7 +39,7 @@ export function ProjectsSection() {
               <article className="group relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/5 bg-neutral-900 transition-colors duration-500 hover:border-white/20 hover:shadow-2xl hover:shadow-white/5">
                 <Link
                   href={`/projects/${project.slug}`}
-                  className="block h-full w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="relative block h-full w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                   aria-label={`${project.title} proje detayını aç`}
                 >
                   <Image
