@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 
 import { SiteSchema } from "@/components/seo/site-schema";
 import { absoluteUrl } from "@/lib/seo";
@@ -91,6 +92,7 @@ export default function RootLayout({
       >
         <SiteSchema />
         {children}
+        <GoogleAnalytics />
         <Analytics />
       </body>
     </html>
