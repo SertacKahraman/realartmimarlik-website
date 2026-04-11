@@ -16,31 +16,14 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim();
 function GoogleAnalyticsTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const initializedRef = useRef(false);
   const lastTrackedPageRef = useRef<string | null>(null);
 
   const search = searchParams.toString();
   const pagePath = search ? `${pathname}?${search}` : pathname;
 
   useEffect(() => {
-    if (!GA_MEASUREMENT_ID) {
+    if (!GA_MEASUREMENT_ID || typeof window.gtag !== "function") {
       return;
-    }
-
-    window.dataLayer = window.dataLayer || [];
-    window.gtag =
-      window.gtag ||
-      ((...args: unknown[]) => {
-        window.dataLayer.push(args);
-      });
-
-    if (!initializedRef.current) {
-      // We manage page views manually so client-side navigations don't get missed.
-      window.gtag("js", new Date());
-      window.gtag("config", GA_MEASUREMENT_ID, {
-        send_page_view: false,
-      });
-      initializedRef.current = true;
     }
 
     if (lastTrackedPageRef.current === pagePath) {
@@ -56,12 +39,7 @@ function GoogleAnalyticsTracker() {
     });
   }, [pagePath]);
 
-  return (
-    <Script
-      src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-      strategy="afterInteractive"
-    />
-  );
+  return null;
 }
 
 export function GoogleAnalytics() {
@@ -70,8 +48,27 @@ export function GoogleAnalytics() {
   }
 
   return (
-    <Suspense fallback={null}>
-      <GoogleAnalyticsTracker />
-    </Suspense>
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = window.gtag || gtag;
+            window.gtag('js', new Date());
+            window.gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: false });
+          `,
+        }}
+      />
+      <Suspense fallback={null}>
+        <GoogleAnalyticsTracker />
+      </Suspense>
+    </>
   );
 }
