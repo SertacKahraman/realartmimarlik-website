@@ -1,6 +1,12 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 const isDevelopment = process.env.NODE_ENV !== "production";
+const googleAnalyticsScriptSources = ["https://www.googletagmanager.com"];
+const googleAnalyticsConnectSources = [
+  "https://www.google-analytics.com",
+  "https://region1.google-analytics.com",
+  "https://stats.g.doubleclick.net",
+];
 
 function isPrivateHostname(hostname: string) {
   const normalizedHostname = hostname.toLowerCase();
@@ -32,11 +38,11 @@ function isPrivateHostname(hostname: string) {
 function buildContentSecurityPolicy(isSecureRequest: boolean) {
   const directives = [
     "default-src 'self'",
-    `script-src 'self' 'unsafe-inline'${isDevelopment ? " 'unsafe-eval'" : ""}`,
+    `script-src 'self' 'unsafe-inline'${isDevelopment ? " 'unsafe-eval'" : ""} ${googleAnalyticsScriptSources.join(" ")}`,
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' blob: data: https:",
     "media-src 'self' blob:",
-    `connect-src 'self' https:${isDevelopment ? " http: ws: wss:" : ""}`,
+    `connect-src 'self' https:${isDevelopment ? " http: ws: wss:" : ""} ${googleAnalyticsConnectSources.join(" ")}`,
     "font-src 'self' data:",
     "object-src 'none'",
     "base-uri 'self'",
