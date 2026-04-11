@@ -6,6 +6,7 @@ const footerColumns = [
     title: "Hızlı Erişim",
     links: [
       { label: "Ana Sayfa", href: "/" },
+      { label: "Hizmetler", href: "/services" },
       { label: "Projelerimiz", href: "/projects" },
       { label: "Hakkımızda", href: "/about" },
       { label: "İletişim", href: "/contact" },
