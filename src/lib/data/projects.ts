@@ -340,6 +340,43 @@ export const projects: Record<string, Project> = {
       "Sosyal deneyimi güçlendiren iç mekan atmosferi",
     ],
   },
+  "kotyora-diamond-villalari": {
+    id: 11,
+    slug: "kotyora-diamond-villalari",
+    title: "Kotyora Diamond Villaları",
+    description:
+      "Yenilikçi mimari anlayışla şekillenen, göz alıcı estetiği ve üst düzey konforuyla bütünleşen lüks konut projesi.",
+    longDescription:
+      "Çağdaş mimariyi üst düzey konforla buluşturan Kotyora Diamond Villaları, güçlü cephe tasarımı ve zarif detaylarıyla prestijli bir yaşam kurguluyor. Doğal malzemelerin modern hatlarla yorumlandığı yapı, geniş cam yüzeyleri sayesinde gün ışığını iç mekanın davetkar atmosferiyle kusursuzca bütünleştiriyor.",
+    category: "Konut",
+    location: "Ordu, Cumhuriyet",
+    year: 2026,
+    area: "Lüks Konut",
+    status: "Projelendirme Aşamasında",
+    image: "/images/projects/kotyora-diamond-villalari-1.jpeg",
+    gallery: [
+      "/images/projects/kotyora-diamond-villalari-1.jpeg",
+      "/images/projects/kotyora-diamond-villalari-2.jpeg",
+      "/images/projects/kotyora-diamond-villalari-3.jpeg",
+      "/images/projects/kotyora-diamond-villalari-4.jpeg",
+      "/images/projects/kotyora-diamond-villalari-5.jpeg",
+      "/images/projects/kotyora-diamond-villalari-6.jpeg",
+      
+    ],
+    services: ["Lüks Konut Tasarımı", "Sofistike Mekan Kurgusu", "Cephe Tasarımı"],
+    materials: [
+      "Geniş cam yüzeyler ve prestijli giriş alanı çözümleri",
+      "Lüks ve ferah bir atmosfer sunan birinci sınıf iç mekan kaplamaları",
+      "Mimari hatları vurgulayan ve ambiyansı güçlendiren özel aydınlatma detayları",
+      "Estetik, uzun ömürlü ve premium segment yapı malzemeleri",
+    ],
+    features: [
+      "Güçlü, çarpıcı ve modern villa cephesi",
+      "Mahremiyeti ve müstakil yaşamı merkeze alan mekan dili",
+      "Geniş aile yaşamını destekleyen ferah ve akıcı plan kurgusu",
+      "İç ve dış mekanı kusursuzca bütünleştiren, doğayla iç içe yaşam atmosferi",
+    ],
+  },
 };
 
 export const projectsList = Object.values(projects).sort((a, b) => b.id - a.id);
