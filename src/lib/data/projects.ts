@@ -377,6 +377,44 @@ export const projects: Record<string, Project> = {
       "İç ve dış mekanı kusursuzca bütünleştiren, doğayla iç içe yaşam atmosferi",
     ],
   },
+  "real-akyazi-konutlari": {
+    id: 12,
+    slug: "real-akyazi-konutlari",
+    title: "Real Akyazı Konutları",
+    description:
+      "Ordu Akyazı bölgesinde projelendirme aşamasında olan, modern konut yaşamına odaklanan toplu konut projesi.",
+    longDescription:
+      "Real Akyazı Konutları, çağdaş konut ihtiyaçlarına yanıt veren planlama yaklaşımı, dengeli cephe dili ve güçlü yaşam kurgusuyla projelendirme aşamasında geliştirilmektedir. Yapı ölçeği, ortak kullanım dengesi ve konut konforu birlikte ele alınarak Akyazı bölgesine değer katacak nitelikli bir konut projesi hedeflenmektedir.",
+    category: "Konut",
+    location: "Ordu, Akyazı",
+    year: 2026,
+    area: "Konut Projesi",
+    status: "Projelendirme Aşamasında",
+    image: "/images/projects/real-akyazi-konutlari-1.jpeg",
+    gallery: [
+      "/images/projects/real-akyazi-konutlari-1.jpeg",
+      "/images/projects/real-akyazi-konutlari-2.jpeg",
+      "/images/projects/real-akyazi-konutlari-3.jpeg",
+      "/images/projects/real-akyazi-konutlari-4.jpeg",
+      "/images/projects/real-akyazi-konutlari-5.jpeg",
+      "/images/projects/real-akyazi-konutlari-6.jpeg",
+      "/images/projects/real-akyazi-konutlari-7.jpeg",
+      "/images/projects/real-akyazi-konutlari-8.jpeg",
+    ],
+    services: ["Mimari Tasarım", "Konut Projelendirme", "Cephe Tasarımı"],
+    materials: [
+      "Modern cephe kaplama kararları",
+      "Geniş açıklık ve balkon çözümleri",
+      "Konut konforunu destekleyen yapı malzemeleri",
+      "Ortak yaşam kurgusuna uygun dış mekan detayları",
+    ],
+    features: [
+      "Akyazı bölgesine uygun konut planlaması",
+      "Modern ve dengeli cephe dili",
+      "Ferah yaşam alanları hedefleyen tasarım yaklaşımı",
+      "Projelendirme aşamasında geliştirilen kapsamlı konut kurgusu",
+    ],
+  },
 };
 
 export const projectsList = Object.values(projects).sort((a, b) => b.id - a.id);
