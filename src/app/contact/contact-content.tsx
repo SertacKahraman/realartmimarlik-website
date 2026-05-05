@@ -23,12 +23,21 @@ const isContactFormConfigured = Boolean(
   EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID
 );
 
+const googleMapsQuery =
+  "Real Art Mimarlık, Akyazı, Atatürk Blv. 357/A, Altınordu, Ordu";
+const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  googleMapsQuery
+)}`;
+const googleMapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
+  googleMapsQuery
+)}&z=16&output=embed`;
+
 const contactInfo = [
   {
     icon: <MapPin className="h-6 w-6" />,
     title: "Adres",
     lines: ["Akyazı, Atatürk Blv.", "357/A, Altınordu / Ordu"],
-    href: "https://maps.google.com/?q=Akyazı, Atatürk Blv. 357/A, Altınordu, Ordu",
+    href: googleMapsLink,
   },
   {
     icon: <Phone className="h-6 w-6" />,
@@ -376,14 +385,14 @@ export default function ContactContent() {
               <h2 className="mb-8 text-2xl font-bold md:text-3xl">Bizi Ziyaret Edin</h2>
               <div className="min-h-[400px] flex-1 overflow-hidden rounded-2xl border border-white/10">
                 <iframe
-                  src="https://maps.google.com/maps?q=Akyaz%C4%B1,+Atat%C3%BCrk+Blv.+357%2FA,+Alt%C4%B1nordu,+Ordu&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src={googleMapsEmbedUrl}
                   width="100%"
                   height="100%"
                   style={{
                     border: 0,
                     minHeight: "400px",
                     filter:
-                      "invert(90%) hue-rotate(180deg) brightness(0.9) contrast(1.1)",
+                      "invert(90%) hue-rotate(180deg) brightness(0.85) contrast(1.08)",
                   }}
                   allowFullScreen
                   loading="lazy"
